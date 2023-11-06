@@ -1,11 +1,14 @@
 using System.Text;
 using HR.BAL.Interfaces;
 using HR.BAL.Services;
+using HR.DAL.Constants;
 using HR.DAL.Data;
 using HR.DAL.Entities.Identity;
 using HR.DAL.Interfaces;
 using HR.DAL.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -44,8 +47,13 @@ public static class ApplicationServicesExtensions
 		services.AddAuthorization();
 		services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 		services.AddScoped<ITokenService, TokenService>();
+		services.AddScoped<IAdminService, AdminService>();
 		services.AddScoped<IAuthService, AuthService>();
+		services.AddScoped<IHouseService, HouseService>();
+		services.AddScoped<IUserService, UserService>();
+		services.AddScoped<IRoomService, RoomService>();
 		services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+		
 
 		return services;
 	}

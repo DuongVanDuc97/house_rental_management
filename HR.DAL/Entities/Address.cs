@@ -1,3 +1,5 @@
+using HR.DAL.Entities.Identity;
+
 namespace HR.DAL.Entities;
 
 public class Address : BaseEntity
@@ -6,4 +8,8 @@ public class Address : BaseEntity
 	public string GoogleMapLocation { get; set; }
 	public DateTime CreatedDate { get; set; }
 	public DateTime? LastModifiedDate { get; set; }
+
+	public ICollection<Campus> Campuses { get; set; } = new List<Campus>();
+	public ICollection<House> Houses { get; set; } = new List<House>();
+	public ICollection<AppUser> Users { get; } = new List<AppUser>();
 }

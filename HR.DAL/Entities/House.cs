@@ -12,7 +12,7 @@ public class House : BaseEntity
 	public int? CampusId { get; set; }
 	public decimal PowerPrice { get; set; }
 	public decimal WaterPrice { get; set; }
-	public DateTime CreatedDate { get; set; }
+	public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 	public DateTime? LastModifiedDate { get; set; }
 	public string CreatedBy { get; set; }
 	public string LastModifiedBy { get; set; }

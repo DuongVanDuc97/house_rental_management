@@ -2,6 +2,8 @@ using HR.API.Controllers.Base;
 using HR.API.Reponses;
 using HR.BAL.DTOs;
 using HR.BAL.Interfaces;
+using HR.DAL.Constants;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HR.API.Controllers;

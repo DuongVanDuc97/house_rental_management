@@ -15,6 +15,10 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
 
@@ -27,6 +31,12 @@
     <ItemGroup>
       <ProjectReference Include="..\HR.BAL\HR.BAL.csproj" />
       <ProjectReference Include="..\HR.DAL\HR.DAL.csproj" />
+
+
+
+
+
+
 
     </ItemGroup>
 
