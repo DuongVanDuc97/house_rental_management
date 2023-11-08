@@ -42,8 +42,7 @@ public class ExceptionHandlingMiddleware
 			BadRequestException => StatusCodes.Status400BadRequest,
 			_ => code
 		};
-
-		// var result = JsonConvert.SerializeObject(ApiResult<string>.Failure(errors));
+		
 		var result = JsonSerializer.Serialize(ApiResult<string>.Failure(errors));
 		context.Response.ContentType = "application/json";
 		context.Response.StatusCode = code;

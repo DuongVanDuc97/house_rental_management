@@ -1,3 +1,91 @@
-{
-
-}
+[
+  {
+    "Id": 1,
+    "DisplayName": "User1",
+    "AddressId": 1,
+    "Status": "Active",
+    "ProfileImageLink": "profile1.jpg",
+    "PhoneNumber": "1234567891",
+    "FacebookUrl": "https://facebook.com/user1",
+    "IdentityCardFrontSideImageLink": "front1.jpg",
+    "IdentityCardBackSideImageLink": "back1.jpg",
+    "UserName": "username1",
+    "Email": "user1@example.com"
+  },
+  {
+    "Id": 2,
+    "FacebookUserId": "fbuser2",
+    "GoogleUserId": "googleuser2",
+    "DisplayName": "User2",
+    "AddressId": 2,
+    "Status": "Active",
+    "ProfileImageLink": "profile2.jpg",
+    "PhoneNumber": "1234567892",
+    "FacebookUrl": "https://facebook.com/user2",
+    "IdentityCardFrontSideImageLink": "front2.jpg",
+    "IdentityCardBackSideImageLink": "back2.jpg",
+    "UserName": "username2",
+    "Email": "user2@example.com"
+  },
+  {
+    "Id": 3,
+    "FacebookUserId": "fbuser3",
+    "GoogleUserId": "googleuser3",
+    "DisplayName": "User3",
+    "AddressId": 3,
+    "Status": "Active",
+    "ProfileImageLink": "profile3.jpg",
+    "PhoneNumber": "1234567893",
+    "FacebookUrl": "https://facebook.com/user3",
+    "IdentityCardFrontSideImageLink": "front3.jpg",
+    "IdentityCardBackSideImageLink": "back3.jpg",
+    "UserName": "username3",
+    "NormalizedUserName": "USERNAME3",
+    "Email": "user3@example.com"
+  },
+  {
+    "Id": 4,
+    "FacebookUserId": "fbuser4",
+    "GoogleUserId": "googleuser4",
+    "DisplayName": "User4",
+    "AddressId": 4,
+    "Status": "Active",
+    "ProfileImageLink": "profile4.jpg",
+    "PhoneNumber": "1234567894",
+    "FacebookUrl": "https://facebook.com/user4",
+    "IdentityCardFrontSideImageLink": "front4.jpg",
+    "IdentityCardBackSideImageLink": "back4.jpg",
+    "UserName": "user4",
+    "Email": "user3@example.com"
+  },
+  {
+    "Id": 5,
+    "FacebookUserId": "fbuser5",
+    "GoogleUserId": "googleuser5",
+    "DisplayName": "User5",
+    "AddressId": 5,
+    "Status": "Active",
+    "ProfileImageLink": "profile5.jpg",
+    "PhoneNumber": "1234567895",
+    "FacebookUrl": "https://facebook.com/user5",
+    "IdentityCardFrontSideImageLink": "front5.jpg",
+    "IdentityCardBackSideImageLink": "back5.jpg",
+    "UserName": "user5",
+    "Email": "user5@example.com"
+  },
+  {
+    "Id": 6,
+    "FacebookUserId": "fbuser6",
+    "GoogleUserId": "googleuser6",
+    "DisplayName": "User6",
+    "AddressId": 6,
+    "StatusId": 2,
+    "ProfileImageLink": "profile6.jpg",
+    "PhoneNumber": "1234567896",
+    "FacebookUrl": "https://facebook.com/user6",
+    "IdentityCardFrontSideImageLink": "front6.jpg",
+    "IdentityCardBackSideImageLink": "back6.jpg",
+    "UserName": "user6",
+    "Email": "user6@example.com"
+  }
+]

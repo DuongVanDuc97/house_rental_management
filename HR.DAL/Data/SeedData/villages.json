@@ -1,3 +1,12 @@
-{
-
-}
+[
+  { "Id": 1, "VillageName": "Village 1", "CommuneId": 1 },
+  { "Id": 2, "VillageName": "Village 2", "CommuneId": 2 },
+  { "Id": 3, "VillageName": "Village 3", "CommuneId": 3 },
+  { "Id": 4, "VillageName": "Village 4", "CommuneId": 4 },
+  { "Id": 5, "VillageName": "Village 5", "CommuneId": 5 },
+  { "Id": 6, "VillageName": "Village 6", "CommuneId": 6 },
+  { "Id": 7, "VillageName": "Village 7", "CommuneId": 7 },
+  { "Id": 8, "VillageName": "Village 8", "CommuneId": 8 },
+  { "Id": 9, "VillageName": "Village 9", "CommuneId": 9 },
+  { "Id": 10, "VillageName": "Village 10", "CommuneId": 10 }
+]

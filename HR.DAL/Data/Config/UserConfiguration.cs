@@ -9,10 +9,11 @@ public class UserConfiguration : IEntityTypeConfiguration<AppUser>
 {
 	public void Configure(EntityTypeBuilder<AppUser> builder)
 	{
-		// builder
-		// 	.HasOne(a => a.Address)
-		// 	.WithOne()
-		// 	.HasForeignKey<Address>(a => a.Id)
-		// 	.OnDelete(DeleteBehavior.Cascade);
+		builder
+			.HasOne(a => a.Address)
+			.WithMany(a => a.Users)
+			.HasForeignKey(a => a.AddressId)
+			.IsRequired()
+			.OnDelete(DeleteBehavior.Cascade);
 	}
 }

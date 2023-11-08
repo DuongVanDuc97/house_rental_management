@@ -9,18 +9,124 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc6485a3-e9e6-4f85-ad1e-e0d5322d206c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR.BAL/IServices/IAdminService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR.BAL/IServices/IHouseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR.BAL/IServices/IRoomService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HR.BAL/IServices/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.House_Rental_Management/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.House_Rental_Management/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.API/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Controllers/Base/BaseApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.API/Controllers/Base/BaseApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Controllers/RoomController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.API/Controllers/RoomController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Middlewares/ExceptionHandlingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.API/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.API/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateHouseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateHouseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateRoomDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateRoomDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateStaffDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/CreateStaffDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/RegisterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/RegisterDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/UpdateStaffDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Requests/UpdateStaffDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/AddressDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/AddressDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/CampusDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/CampusDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/HouseDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/HouseDetailDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/HouseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/HouseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/RoomDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/RoomDetailDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/RoomDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/RoomDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/StaffDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/StaffDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/UserToReturn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/UserToReturn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/VillageDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/DTOs/Responses/VillageDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/HR.BAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/HR.BAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Helpers/Pagination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Helpers/Pagination.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/IAdminService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/IServices/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/IHouseService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/IRoomService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/ITokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/IServices/ITokenService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Interfaces/IUserService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Mapper/MapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Mapper/MapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/AdminService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/AdminService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/HouseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/HouseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/RoomService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/RoomService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/TokenService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.BAL/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.BAL/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Constants/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Constants/Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Constants/RoomStatusEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Constants/RoomStatusEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Constants/RoomTypeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Constants/RoomTypeEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Constants/UserStatusConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Constants/UserStatusConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/ApplicationDbContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/ApplicationDbContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/Config/AddressConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/Config/AddressConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/Config/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/Config/UserConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/addresses.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/addresses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/campuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/campuses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/communes.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/communes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/districts.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/districts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/houses.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/houses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Data/SeedData/villages.json" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Data/SeedData/villages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/Address.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/Campus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/Campus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/House.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/House.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/Identity/AppUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/Identity/AppUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/RoomStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/RoomStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/RoomType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/RoomType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Entities/UserStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Entities/UserStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/HR.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/HR.DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Interfaces/IGenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Interfaces/IGenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Params/BaseSpecParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Params/BaseSpecParams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Params/HouseSpecParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Params/HouseSpecParams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Params/RoomSpecParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Params/RoomSpecParams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Repositories/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Repositories/GenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Specifications/HouseWithFiltersForCountSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Specifications/HouseWithFiltersForCountSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Specifications/HousesOfLandlordSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Specifications/HousesOfLandlordSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Specifications/HousesWithNavigationPropertySpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Specifications/HousesWithNavigationPropertySpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Specifications/RoomWithFiltersForCountSpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Specifications/RoomWithFiltersForCountSpec.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.DAL/Specifications/RoomWithNavigationPropertySpec.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HR.DAL/Specifications/RoomWithNavigationPropertySpec.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/Address.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/Campus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/Commune.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/District.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/House.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/HouseImage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/Identity/AppUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HR.DAL/Entities/Village.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/060630b043294a9fbe6c5ad828a11cb5aee00/13/7e497ebc/AuthenticationException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6c01bcfa46a945eba5fab96b4748e0192200/ac/7636d670/IServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1dad7066d59e42d92476c5ad1180c2b63352d32689dd3d3be2bb2aa26b3bea5/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b2c5363811f179d4a7b258c44117ed14be747bf83841c4e84e9f06310d99b/IDbContextPoolable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/345596480b9345b396e82d439f0b40a5c40800/_0d4d0/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3e7a5d9e8f1e8fc8895e3999e4b986ebd69c6f311e8a7f7ba94f4560a54a89/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/467d97e02728621ed80e8a82be1be79c854d539c183a83f1e82855c54e8bc5f/IServiceScope.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/621526284d3e4868b98948aff942206525763e57e194a27623b66c384466/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/709d621a809059a29bb7342e26263dcd3b33b461cb0f1542a4c84da8fee9ebe/WebApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/791a17b438a2db8374b2fe21c7dc159846701cdae8879a2aeb668961b7b/JsonResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d382df578ec93391918cfaa4ce7f4b8f35c9aed1241d6556dc9be26df13c/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85444b87515266794f71448c4f4bd6c1bde1cbd93fe1721b9221ae0dd4ebc93/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8e25cce28490c87faaf15522967e96692c1829b521f6b7a4fc8bde524eec/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9039c2e865d246c637b71116e73fc6e9e9b19d7ca7cf852c4c69f3dc5d2/IDbContextDependencies.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aacc74311ca994f12b71cddb22241be9d6654c65e94f5985c5488dee396916f/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c21ddb6590bc2623c6e51cc7d38cc2242cdbd337c76c613756e7875fdb6ea67c/ApiControllerAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de271ccf3ff37986b6d3371645fe3b139cc5e384e759f686d8b2e87c734b0/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8546a7804888b43387c325704e64cfb3814756c02dbc95b61bbd866496aa/IInfrastructure.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -31,31 +137,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AtomSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.4045077&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "/Users/therealnig/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/therealnig/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/therealnig/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/therealnig/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/therealnig/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/therealnig/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.HR.API: http">
     <configuration name="HR.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/HR.API/HR.API.csproj" />
@@ -125,7 +232,12 @@
       <updated>1698639819703</updated>
       <workItem from="1698639820779" duration="12273000" />
       <workItem from="1698718909323" duration="26726000" />
-      <workItem from="1698806108096" duration="1440000" />
+      <workItem from="1698806108096" duration="33404000" />
+      <workItem from="1698909415361" duration="68821000" />
+      <workItem from="1699180206749" duration="747000" />
+      <workItem from="1699184448631" duration="1914000" />
+      <workItem from="1699236547923" duration="21367000" />
+      <workItem from="1699366542905" duration="1440000" />
     </task>
     <servers />
   </component>

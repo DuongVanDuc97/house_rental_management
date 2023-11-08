@@ -1,3 +1,12 @@
-{
-
-}
+[
+  { "Id": 1, "DistrictName": "District 1" },
+  { "Id": 2, "DistrictName": "District 2" },
+  { "Id": 3, "DistrictName": "District 3" },
+  { "Id": 4, "DistrictName": "District 4" },
+  { "Id": 5, "DistrictName": "District 5" },
+  { "Id": 6, "DistrictName": "District 6" },
+  { "Id": 7, "DistrictName": "District 7" },
+  { "Id": 8, "DistrictName": "District 8" },
+  { "Id": 9, "DistrictName": "District 9" },
+  { "Id": 10, "DistrictName": "District 10" }
+]

@@ -1,3 +1,8 @@
-{
-
-}
+[
+  { "Id": 1, "HouseName": "House 1", "Information": "Info 1", "AddressId": 1, "VillageId": 1, "LandlordId": 1, "CampusId": 1, "PowerPrice": 50.0, "WaterPrice": 25.0 },
+  { "Id": 2, "HouseName": "House 2", "Information": "Info 2", "AddressId": 2, "VillageId": 2, "LandlordId": 2, "CampusId": 2, "PowerPrice": 55.0, "WaterPrice": 30.0 },
+  { "Id": 3, "HouseName": "House 3", "Information": "Info 3", "AddressId": 3, "VillageId": 3, "LandlordId": 3, "CampusId": 3, "PowerPrice": 60.0, "WaterPrice": 35.0 },
+  { "Id": 4, "HouseName": "House 4", "Information": "Info 4", "AddressId": 4, "VillageId": 4, "LandlordId": 4, "CampusId": 4, "PowerPrice": 65.0, "WaterPrice": 40.0 },
+  { "Id": 5, "HouseName": "House 5", "Information": "Info 5", "AddressId": 5, "VillageId": 5, "LandlordId": 5, "CampusId": 5, "PowerPrice": 70.0, "WaterPrice": 45.0 },
+  { "Id": 6, "HouseName": "House 6", "Information": "Info 6", "AddressId": 6, "VillageId": 6, "LandlordId": 6, "CampusId": 6, "PowerPrice": 75.0, "WaterPrice": 50.0 }
+]

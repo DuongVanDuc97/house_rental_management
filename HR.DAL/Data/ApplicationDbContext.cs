@@ -1,8 +1,10 @@
 using System.Reflection;
+using HR.DAL.Constants;
 using HR.DAL.Entities;
 using HR.DAL.Entities.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using UserStatus = HR.DAL.Entities.UserStatus;
 
 namespace HR.DAL.Data;
 
@@ -20,8 +22,10 @@ public class ApplicationDbContext : IdentityDbContext<AppUser, AppRole, int>
 	public DbSet<House> Houses { get; set; }
 	public DbSet<HouseImage> HouseImages { get; set; }
 	public DbSet<Rate> Rates { get; set; }
+	public DbSet<Room> Rooms { get; set; }
 	public DbSet<RoomType> RoomTypes { get; set; }
-	public DbSet<Status> Statuses { get; set; }
+	public DbSet<RoomStatus> RoomStatus { get; set; }
+	public DbSet<UserStatus> UserStatus { get; set; }
 
 	protected override void OnModelCreating(ModelBuilder builder)
 	{
@@ -29,16 +33,31 @@ public class ApplicationDbContext : IdentityDbContext<AppUser, AppRole, int>
 
 		// builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-		// builder.Entity<AppUser>()
-		// 	.HasOne(a => a.Address)
-		// 	.WithOne()
-		// 	.HasForeignKey<Address>(a => a.Id)
-		// 	.OnDelete(DeleteBehavior.Cascade);
+		builder.Entity<AppUser>().Navigation(e => e.Status).AutoInclude();
 
-		builder.Entity<AppRole>()
-			.HasData(
-				new AppRole { Id = 1, Name = "Student", NormalizedName = "STUDENT", ConcurrencyStamp = Guid.NewGuid().ToString()},
-				new AppRole { Id = 2, Name = "Landlord", NormalizedName = "LANDLORD", ConcurrencyStamp = Guid.NewGuid().ToString()}
-				);
+		builder.Entity<AppRole>().HasData(
+			new AppRole { Id = 1, Name = Role.Administrator, NormalizedName = Role.Administrator.ToUpper(), ConcurrencyStamp = Guid.NewGuid().ToString()},
+			new AppRole { Id = 2, Name = Role.Landlord, NormalizedName = Role.Landlord.ToUpper(), ConcurrencyStamp = Guid.NewGuid().ToString()},
+			new AppRole { Id = 3, Name = Role.Student, NormalizedName = Role.Student.ToUpper(), ConcurrencyStamp = Guid.NewGuid().ToString()},
+			new AppRole { Id = 4, Name = Role.Staff, NormalizedName = Role.Staff.ToUpper(), ConcurrencyStamp = Guid.NewGuid().ToString()}
+			);
+
+		builder.Entity<RoomType>().HasData(
+			new RoomType { Id = (int)RoomTypeEnum.Private, RoomTypeName = RoomTypeEnum.Private.ToString()},
+			new RoomType { Id = (int)RoomTypeEnum.Open, RoomTypeName = RoomTypeEnum.Open.ToString()}
+		);
+
+		builder.Entity<RoomStatus>().HasData(
+			new RoomStatus {Id = (int)RoomStatusEnum.Available, StatusName = RoomStatusEnum.Available.ToString()},
+			new RoomStatus {Id = (int)RoomStatusEnum.Occupied, StatusName = RoomStatusEnum.Occupied.ToString()},
+			new RoomStatus {Id = (int)RoomStatusEnum.Unavailable, StatusName = RoomStatusEnum.Unavailable.ToString()}
+		);
+
+		builder.Entity<UserStatus>().HasData(
+			new UserStatus { Id = UserStatusConstants.Inactive, StatusName = "Inactive" },
+			new UserStatus { Id = UserStatusConstants.Active, StatusName = "Active" },
+			new UserStatus { Id = UserStatusConstants.Requested, StatusName = "Requested" },
+			new UserStatus { Id = UserStatusConstants.Rejected, StatusName = "Rejected" }
+		);
 	}
 }

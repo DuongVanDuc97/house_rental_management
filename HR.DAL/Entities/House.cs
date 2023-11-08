@@ -14,8 +14,8 @@ public class House : BaseEntity
 	public decimal WaterPrice { get; set; }
 	public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 	public DateTime? LastModifiedDate { get; set; }
-	public string CreatedBy { get; set; }
-	public string LastModifiedBy { get; set; }
+	public string? CreatedBy { get; set; }
+	public string? LastModifiedBy { get; set; }
 
 	public Address Address { get; set; }
 	public Campus Campus { get; set; }

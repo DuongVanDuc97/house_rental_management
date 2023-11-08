@@ -1,3 +1,12 @@
-{
-
-}
+[
+  { "Id": 1, "CommuneName": "Commune 1", "DistrictId": 1 },
+  { "Id": 2, "CommuneName": "Commune 2", "DistrictId": 2 },
+  { "Id": 3, "CommuneName": "Commune 3", "DistrictId": 3 },
+  { "Id": 4, "CommuneName": "Commune 4", "DistrictId": 4 },
+  { "Id": 5, "CommuneName": "Commune 5", "DistrictId": 5 },
+  { "Id": 6, "CommuneName": "Commune 6", "DistrictId": 6 },
+  { "Id": 7, "CommuneName": "Commune 7", "DistrictId": 7 },
+  { "Id": 8, "CommuneName": "Commune 8", "DistrictId": 8 },
+  { "Id": 9, "CommuneName": "Commune 9", "DistrictId": 9 },
+  { "Id": 10, "CommuneName": "Commune 10", "DistrictId": 10 }
+]

@@ -1,4 +1,4 @@
-namespace HR.BAL.Constants;
+namespace HR.DAL.Constants;
 
 public static class Role
 {

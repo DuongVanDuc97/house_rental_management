@@ -1,6 +1,6 @@
 namespace HR.BAL.DTOs;
 
-public class UpdateStaff
+public class UpdateStaffDto
 {
 	
 }

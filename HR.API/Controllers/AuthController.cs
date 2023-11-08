@@ -16,9 +16,9 @@ public class AuthController : BaseApiController
 	{
 		_authService = authService;
 	}
-
+	
 	[HttpPost("login")]
-	public async Task<IActionResult> Login(LoginDto loginDto)
+	public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
 	{
 		var user = await _authService.LoginAsync(loginDto);
 		return Ok(ApiResult<UserDto>.Success(user));

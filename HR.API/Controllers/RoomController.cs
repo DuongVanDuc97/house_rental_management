@@ -19,9 +19,10 @@ public class RoomController : BaseApiController
 	}
 	
 	[HttpPost]
-	public async Task<RoomDto> CreateRoom(CreateRoomDto createRoomDto)
+	public async Task<ActionResult<RoomDto>> CreateRoom(CreateRoomDto createRoomDto)
 	{
-		return await _roomService.CreateRoom(createRoomDto);
+		var room = await _roomService.CreateRoom(createRoomDto);
+		return Ok(ApiResult<RoomDto>.Success(room));
 	}
 	
 	[HttpGet("{roomId}")]

@@ -2,7 +2,7 @@ namespace HR.BAL.Helpers;
 
 public class Pagination<T> where T : class
 {
-	public Pagination(int pageIndex, int pageSize, int count, IReadOnlyList<T> data)
+	public Pagination(int pageIndex, int pageSize, int count, List<T> data)
 	{
 		PageIndex = pageIndex;
 		PageSize = pageSize;
@@ -13,5 +13,5 @@ public class Pagination<T> where T : class
 	public int PageIndex { get; set; }
 	public int PageSize { get; set; }
 	public int Count { get; set; }
-	public IReadOnlyList<T> Data { get; set; }
+	public List<T> Data { get; set; }
 }

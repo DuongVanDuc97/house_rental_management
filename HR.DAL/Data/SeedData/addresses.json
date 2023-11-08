@@ -1,3 +1,22 @@
-{
-
-}
+[
+  { "Id": 1, "Addresses": "Campus Street 1, Campus City 1, Campus State 1, 12345", "GoogleMapLocation": "123.456, -789.012", "LastModifiedDate": null },
+  { "Id": 2, "Addresses": "Campus Street 2, Campus City 2, Campus State 2, 23456", "GoogleMapLocation": "234.567, -890.123", "LastModifiedDate": null },
+  { "Id": 3, "Addresses": "Campus Street 3, Campus City 3, Campus State 3, 34567", "GoogleMapLocation": "345.678, -901.234", "LastModifiedDate": null },
+  { "Id": 4, "Addresses": "Campus Street 4, Campus City 4, Campus State 4, 45678", "GoogleMapLocation": "456.789, -012.345", "LastModifiedDate": null },
+  { "Id": 5, "Addresses": "Campus Street 5, Campus City 5, Campus State 5, 56789", "GoogleMapLocation": "567.890, -123.456", "LastModifiedDate": null },
+  { "Id": 6, "Addresses": "Campus Street 6, Campus City 6, Campus State 6, 67890", "GoogleMapLocation": "678.901, -234.567", "LastModifiedDate": null },
+  { "Id": 7, "Addresses": "Campus Street 7, Campus City 7, Campus State 7, 78901", "GoogleMapLocation": "789.012, -345.678", "LastModifiedDate": null },
+  { "Id": 8, "Addresses": "Campus Street 8, Campus City 8, Campus State 8, 89012", "GoogleMapLocation": "890.123, -456.789", "LastModifiedDate": null },
+  { "Id": 9, "Addresses": "Campus Street 9, Campus City 9, Campus State 9, 90123", "GoogleMapLocation": "901.234, -567.890", "LastModifiedDate": null },
+  { "Id": 10, "Addresses": "Campus Street 10, Campus City 10, Campus State 10, 01234", "GoogleMapLocation": "012.345, -678.901", "LastModifiedDate": null },
+  { "Id": 11, "Addresses": "User Street 1, User City 1, User State 1, 12345", "GoogleMapLocation": "123.456, -789.012", "LastModifiedDate": null },
+  { "Id": 12, "Addresses": "User Street 2, User City 2, User State 2, 23456", "GoogleMapLocation": "234.567, -890.123", "LastModifiedDate": null },
+  { "Id": 13, "Addresses": "User Street 3, User City 3, User State 3, 34567", "GoogleMapLocation": "345.678, -901.234", "LastModifiedDate": null },
+  { "Id": 14, "Addresses": "User Street 4, User City 4, User State 4, 45678", "GoogleMapLocation": "456.789, -012.345", "LastModifiedDate": null },
+  { "Id": 15, "Addresses": "User Street 5, User City 5, User State 5, 56789", "GoogleMapLocation": "567.890, -123.456", "LastModifiedDate": null },
+  { "Id": 16, "Addresses": "User Street 6, User City 6, User State 6, 67890", "GoogleMapLocation": "678.901, -234.567", "LastModifiedDate": null },
+  { "Id": 17, "Addresses": "User Street 7, User City 7, User State 7, 78901", "GoogleMapLocation": "789.012, -345.678", "LastModifiedDate": null },
+  { "Id": 18, "Addresses": "User Street 8, User City 8, User State 8, 89012", "GoogleMapLocation": "890.123, -456.789", "LastModifiedDate": null },
+  { "Id": 19, "Addresses": "User Street 9, User City 9, User State 9, 90123", "GoogleMapLocation": "901.234, -567.890", "LastModifiedDate": null },
+  { "Id": 20, "Addresses": "User Street 10, User City 10, User State 10, 01234", "GoogleMapLocation": "012.345, -678.901", "LastModifiedDate": null }
+]

@@ -4,6 +4,6 @@ namespace HR.API.Controllers.Base;
 
 [ApiController]
 [Route("api/[controller]")]
-public class BaseApiController : ControllerBase
+public class BaseApiController : Controller
 {
 }

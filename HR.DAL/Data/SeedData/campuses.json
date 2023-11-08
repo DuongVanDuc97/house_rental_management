@@ -1,3 +1,12 @@
-{
-
-}
+[
+  { "Id": 1, "CampusName": "Campus 1", "AddressId": 1 },
+  { "Id": 2, "CampusName": "Campus 2", "AddressId": 2 },
+  { "Id": 3, "CampusName": "Campus 3", "AddressId": 3 },
+  { "Id": 4, "CampusName": "Campus 4", "AddressId": 4 },
+  { "Id": 5, "CampusName": "Campus 5", "AddressId": 5 },
+  { "Id": 6, "CampusName": "Campus 6", "AddressId": 6 },
+  { "Id": 7, "CampusName": "Campus 7", "AddressId": 7 },
+  { "Id": 8, "CampusName": "Campus 8", "AddressId": 8 },
+  { "Id": 9, "CampusName": "Campus 9", "AddressId": 9 },
+  { "Id": 10, "CampusName": "Campus 10", "AddressId": 10 }
+]
